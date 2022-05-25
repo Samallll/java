@@ -1,0 +1,16 @@
+class Solution {
+    public int finalValueAfterOperations(String[] operations) {
+        int x=0;
+        for (String a:operations)
+        {
+            /*switch case can be used.
+            If statements are greater than 4-5 then its better to use switch case
+            */
+            if(a.charAt(1)=='+')
+                x++;
+            else
+                x--;
+        }
+        return x;
+    }
+}
